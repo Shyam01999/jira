@@ -1,0 +1,206 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?v6lpjw');
+  src:  url('fonts/icomoon.eot?v6lpjw#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?v6lpjw') format('truetype'),
+    url('fonts/icomoon.woff?v6lpjw') format('woff'),
+    url('fonts/icomoon.svg?v6lpjw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-plus:before {
+  content: "\e923";
+}
+.icon-lock:before {
+  content: "\e98f";
+}
+.icon-unlocked:before {
+  content: "\e990";
+}
+.icon-bin:before {
+  content: "\e9ac";
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #069A8E;
+}
+
+.toolbox-cont{
+  position: fixed;
+  width: 100vw;
+  top: 0px;
+    height: 5rem;
+    background-color: #474E68;
+    display: flex;
+    align-items: center;
+}
+
+.toolbox-priority-cont{
+    height: 3rem;
+    width: 18rem;
+    background-color: #EDE4E0;
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 4px;
+}
+
+.action-btn-cont{
+    height: 3rem;
+    width: 10rem;
+    background-color: #FAF7F0;
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 4px;
+}
+
+/* .toolbox-main-cont{
+    height:42rem;
+    
+    
+} */
+
+.color{
+    height: 1.5rem;
+    width: 3rem;
+    background-color: red;
+}
+
+.lightpink{
+background-color: #FFACC7;
+}
+
+.lightblue{
+background-color: #7978FF;
+}
+
+.lightgreen{
+background-color: #ADE792;
+}
+
+.lightblack{
+background-color: #393E46;
+}
+
+.add-btn{
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+.remove-btn{
+  font-size: 1.5rem;
+  /* color: red; */
+  cursor: pointer;
+}
+
+.toolbox-main-cont{
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  left: 5vw;
+  top: 10vh;
+  background-color: #EFF5F5;
+  display: none;
+  margin-left: 23rem;
+  margin-top: 7rem;
+  
+}
+
+.textarea-cont{
+  outline: none;
+  resize: none;
+  border: none;
+  background-color: #F0EBE3;
+  height: 100%;
+  width: 75%;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.toolbox-righ-cont{
+  height: 100%;
+  width: 25%;
+  background-color: #F2DEBA;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;  
+}
+
+.active{
+  border: 5px solid red;
+}
+
+.toolbox-righ-cont .priorty-color{
+  width: 5rem;
+  height: 2.75rem;
+}
+
+.main-cont{
+margin-top: 7rem;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+gap: 2rem;
+
+}
+
+.ticket-cont{
+height: 10rem;
+width: 15rem;
+background-color:#F0EBE3;
+/* margin: 2rem; */
+}
+
+.ticket-color{
+height: 1rem;
+}
+
+.ticket-id{
+height: 1.5rem;
+padding: 5px;
+font-weight: bold;
+font-size: .9rem;
+color: #FA7070;
+
+}
+
+.task-area{
+height: 5.8rem;
+padding: 5px;
+font-size: 1.25rem;
+overflow: auto;
+outline: none;
+word-break: break-all;
+}
+
+.lock-unlock{
+  font-size: 1.5rem;
+  margin-left: 13.5rem;
+}
